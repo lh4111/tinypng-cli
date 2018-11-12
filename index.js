@@ -1,10 +1,9 @@
 #! /usr/bin/env node
-
 const request = require('request')
 const fs = require('fs')
-const chalk = require('chalk')
 
 const [, ,source, output = source] = process.argv
+
 showBanner()
 
 const total = {
@@ -60,7 +59,7 @@ function compress(sourcePath, outputPath) {
 }
 
 function showBanner() {
-  console.log(chalk`{hex('#06f')
+  console.log(`
 ████████╗██╗███╗   ██╗██╗   ██╗██████╗ ███╗   ██╗ ██████╗
 ╚══██╔══╝██║████╗  ██║╚██╗ ██╔╝██╔══██╗████╗  ██║██╔════╝
    ██║   ██║██╔██╗ ██║ ╚████╔╝ ██████╔╝██╔██╗ ██║██║  ███╗

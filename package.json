@@ -1,6 +1,6 @@
 {
   "name": "tinypng-unlimited-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Use the tingypng homepage upload API to break the 500/month limit",
   "main": "index.js",
   "bin": {
@@ -21,7 +21,6 @@
   "author": "lh@lihao.work",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
     "request": "^2.88.0"
   }
 }
