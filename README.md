@@ -3,7 +3,7 @@ Use the tingypng homepage upload API to break the 500/month limit
 
 ## Install
 ```bash
-npm i -g tinypng-cli
+npm i -g tinypng-unlimited-cli
 ```
 
 ## How to Use
