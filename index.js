@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const request = require('request')
 const fs = require('fs')
+const path = require('path')
 
 const [, ,source, output = source] = process.argv
 
@@ -22,7 +23,7 @@ if (fs.statSync(source).isDirectory()) {
 
 function compressDir(sourceDir, outputDir) {
   const files = fs.readdirSync(sourceDir).filter(fileName => fileName.match(/(\.png|\.jpg|\.jpeg)$/)).map(fileName => {
-    return compress(`${sourceDir}/${fileName}`, `${outputDir}/${fileName}`)
+    return compress(`${sourceDir}/${fileName}`, `${outputDir}${path.sep}${fileName}`)
   })
   Promise.all(files).then(() => {
     console.log('——————————————————————————————————————')
