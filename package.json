@@ -1,0 +1,27 @@
+{
+  "name": "tinypng-cli",
+  "version": "1.0.0",
+  "description": "Use the upload api of tinypng's homeage to compress images, so can use it without key.",
+  "main": "index.js",
+  "bin": {
+    "tinypng": "./index.js"
+  },
+  "keywords": [
+    "tinypng",
+    "tinypng cli",
+    "tinypng-cli",
+    "tinyjpg",
+    "compress png",
+    "compress jpg",
+    "png compress",
+    "unlimited"
+  ],
+  "repository": "https://github.com/lh4111/tinypng-cli",
+  "homepage": "https://github.com/lh4111/tinypng-cli",
+  "author": "lh@lihao.work",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "request": "^2.88.0"
+  }
+}
