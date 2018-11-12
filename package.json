@@ -1,7 +1,7 @@
 {
-  "name": "tinypng-cli",
-  "version": "1.0.0",
-  "description": "Use the upload api of tinypng's homeage to compress images, so can use it without key.",
+  "name": "tinypng-unlimited-cli",
+  "version": "1.0.1",
+  "description": "Use the tingypng homepage upload API to break the 500/month limit",
   "main": "index.js",
   "bin": {
     "tinypng": "./index.js"
@@ -14,7 +14,7 @@
     "compress png",
     "compress jpg",
     "png compress",
-    "unlimited"
+    "tinypng unlimited"
   ],
   "repository": "https://github.com/lh4111/tinypng-cli",
   "homepage": "https://github.com/lh4111/tinypng-cli",

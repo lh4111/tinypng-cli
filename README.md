@@ -1,14 +1,14 @@
-# tinypnc-cli
-Use the upload api of tinypng's homeage to compress images, so can use it without key.
-## Install
+# tinypng-unlimited-cli
+Use the tingypng homepage upload API to break the 500/month limit
 
+## Install
 ```bash
 npm i -g tinypng-cli
 ```
 
-## Useage
+## How to Use
 ```bask
-tinypng srouce<dir|file> [outputDir] // outputDir must exist
+tinypng srouce<dir|file> [outputDir]
 
 // default outputDir is same as source
 tinypng ./src/img

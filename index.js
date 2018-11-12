@@ -13,7 +13,7 @@ const total = {
 }
 if (fs.statSync(source).isDirectory()) {
   if (!fs.statSync(output).isDirectory()) {
-    console.error('输出目录必须是目录')
+    console.error('output must be a directory')
     return
   }
   compressDir(source, output)
@@ -27,7 +27,7 @@ function compressDir(sourceDir, outputDir) {
   })
   Promise.all(files).then(() => {
     console.log('——————————————————————————————————————')
-    console.log(`共节省空间: ${toKb(total.input-total.output)} ${((total.input-total.output) / 100).toFixed()}%`)
+    console.log(`Total Saved: ${toKb(total.input-total.output)} ${((total.input-total.output) / 100).toFixed()}%`)
   })
 }
 
@@ -52,7 +52,7 @@ function compress(sourcePath, outputPath) {
           if (error) throw new Error(error)
           total.input += body.input.size
           total.output += body.output.size
-          console.log(`${sourcePath}\t原:${toKb(body.input.size)}\t压缩后:${toKb(body.output.size)}\t节省空间: ${toKb(body.input.size-body.output.size)}\t${((1 - body.output.ratio)* 100).toFixed()}%`)
+          console.log(`${sourcePath}\tsource:${toKb(body.input.size)}\tcompressed:${toKb(body.output.size)}\tsaved: ${toKb(body.input.size-body.output.size)}\t${((1 - body.output.ratio)* 100).toFixed()}%`)
           resolve()
       })
     })
