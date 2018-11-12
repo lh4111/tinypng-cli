@@ -26,7 +26,7 @@ function compressDir(sourceDir, outputDir) {
   })
   Promise.all(files).then(() => {
     console.log('——————————————————————————————————————')
-    console.log(`Total Saved: ${toKb(total.input-total.output)} ${((total.input-total.output) / 100).toFixed()}%`)
+    console.log(`Total Saved: ${toKb(total.input-total.output)} ${((total.input-total.output) / total.input).toFixed()}%`)
   })
 }
 
