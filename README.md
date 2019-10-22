@@ -8,7 +8,7 @@ npm i -g tinypng-unlimited-cli
 
 ## How to Use
 ```bask
-tinypng srouce<dir|file> [outputDir]
+tinypng source<dir|file> [outputDir]
 
 // default outputDir is same as source
 tinypng ./src/img
